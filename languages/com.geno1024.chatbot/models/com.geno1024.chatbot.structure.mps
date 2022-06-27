@@ -16,6 +16,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -60,16 +63,133 @@
     <node concept="1TJgyj" id="Uydz3HwYM5" role="1TKVEi">
       <property role="IQ2ns" value="1054464846529293445" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="20kJfa" value="login" />
-      <ref role="20lvS9" node="Uydz3HwYnJ" resolve="Login" />
+      <ref role="20lvS9" node="7VtwA6ZGOUA" resolve="Login" />
+    </node>
+    <node concept="1TJgyj" id="Uydz3HxeEj" role="1TKVEi">
+      <property role="IQ2ns" value="1054464846529358483" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="onBoot" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="Uydz3HxeEe" resolve="OnBoot" />
+    </node>
+    <node concept="1TJgyj" id="5FGX9ys1qyX" role="1TKVEi">
+      <property role="IQ2ns" value="6551880494207051965" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="onReply" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5FGX9ys1qz1" resolve="OnReply" />
+    </node>
+    <node concept="1TJgyj" id="5FGX9ys1qz4" role="1TKVEi">
+      <property role="IQ2ns" value="6551880494207051972" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="actionPool" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5FGX9ys1nEc" resolve="Action" />
     </node>
   </node>
-  <node concept="1TIwiD" id="Uydz3HwYnJ">
-    <property role="EcuMT" value="1054464846529291759" />
-    <property role="TrG5h" value="Login" />
-    <property role="3GE5qa" value="com.geno1024.chatbot.ds" />
+  <node concept="1TIwiD" id="Uydz3HxeEe">
+    <property role="EcuMT" value="1054464846529358478" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.on" />
+    <property role="TrG5h" value="OnBoot" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5FGX9ys10nS" role="1TKVEi">
+      <property role="IQ2ns" value="6551880494206944760" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="actions" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="5FGX9ys1nEc" resolve="Action" />
+    </node>
+    <node concept="PrWs8" id="5FGX9ys1nEr" role="PzmwI">
+      <ref role="PrY4T" node="5FGX9ys1nEd" resolve="On" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="Uydz3HxeF6">
+    <property role="EcuMT" value="1054464846529358534" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.condition" />
+    <property role="TrG5h" value="ExactMatch" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5FGX9ys1nEj" role="PzmwI">
+      <ref role="PrY4T" node="5FGX9ys1nEb" resolve="Condition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="Uydz3HxeF7">
+    <property role="EcuMT" value="1054464846529358535" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.condition" />
+    <property role="TrG5h" value="Containing" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5FGX9ys10ok" role="1TKVEl">
+      <property role="IQ2nx" value="6551880494206944788" />
+      <property role="TrG5h" value="keyword" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5FGX9ys1nEp" role="PzmwI">
+      <ref role="PrY4T" node="5FGX9ys1nEb" resolve="Condition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5FGX9ys10nQ">
+    <property role="EcuMT" value="6551880494206944758" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.action" />
+    <property role="TrG5h" value="InputAware" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5FGX9ys1nEl" role="PzmwI">
+      <ref role="PrY4T" node="5FGX9ys1nEc" resolve="Action" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5FGX9ys10nR">
+    <property role="EcuMT" value="6551880494206944759" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.action" />
+    <property role="TrG5h" value="Static" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5FGX9ys1nEn" role="PzmwI">
+      <ref role="PrY4T" node="5FGX9ys1nEc" resolve="Action" />
+    </node>
+    <node concept="1TJgyi" id="7VtwA6ZHnxR" role="1TKVEl">
+      <property role="IQ2nx" value="9141606174971754615" />
+      <property role="TrG5h" value="content" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5FGX9ys1nEb">
+    <property role="TrG5h" value="Condition" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.condition" />
+    <property role="EcuMT" value="1054464846529358532" />
+  </node>
+  <node concept="PlHQZ" id="5FGX9ys1nEc">
+    <property role="TrG5h" value="Action" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.action" />
+    <property role="EcuMT" value="6551880494206944757" />
+    <node concept="PrWs8" id="7VtwA6ZHiJe" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5FGX9ys1nEd">
+    <property role="TrG5h" value="On" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.on" />
+    <property role="EcuMT" value="1054464846529358480" />
+  </node>
+  <node concept="1TIwiD" id="5FGX9ys1qz1">
+    <property role="EcuMT" value="6551880494207051969" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.on" />
+    <property role="TrG5h" value="OnReply" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="5FGX9ys1qz2" role="PzmwI">
+      <ref role="PrY4T" node="5FGX9ys1nEd" resolve="On" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7VtwA6ZGOUb">
+    <property role="EcuMT" value="9141606174971612811" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.login" />
+    <property role="TrG5h" value="QQ" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="7VtwA6ZGOUD" role="PzmwI">
+      <ref role="PrY4T" node="7VtwA6ZGOUA" resolve="Login" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7VtwA6ZGOUA">
+    <property role="TrG5h" value="Login" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.login" />
+    <property role="EcuMT" value="1054464846529291759" />
     <node concept="1TJgyi" id="Uydz3HwYnK" role="1TKVEl">
       <property role="IQ2nx" value="1054464846529291760" />
       <property role="TrG5h" value="username" />
