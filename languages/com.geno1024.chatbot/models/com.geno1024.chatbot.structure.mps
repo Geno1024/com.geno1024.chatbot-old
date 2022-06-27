@@ -93,15 +93,20 @@
     <property role="3GE5qa" value="com.geno1024.chatbot.ds.on" />
     <property role="TrG5h" value="OnBoot" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5FGX9ys10nS" role="1TKVEi">
-      <property role="IQ2ns" value="6551880494206944760" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="actions" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="5FGX9ys1nEc" resolve="Action" />
-    </node>
     <node concept="PrWs8" id="5FGX9ys1nEr" role="PzmwI">
       <ref role="PrY4T" node="5FGX9ys1nEd" resolve="On" />
+    </node>
+    <node concept="1TJgyj" id="2lNm$6r9Ud9" role="1TKVEi">
+      <property role="IQ2ns" value="2698599839547499337" />
+      <property role="20kJfa" value="action" />
+      <ref role="20lvS9" node="5FGX9ys1nEc" resolve="Action" />
+    </node>
+    <node concept="1TJgyj" id="2lNm$6rarJe" role="1TKVEi">
+      <property role="IQ2ns" value="2698599839547636686" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2lNm$6rarJb" resolve="Target" />
     </node>
   </node>
   <node concept="1TIwiD" id="Uydz3HxeF6">
@@ -198,6 +203,39 @@
     <node concept="1TJgyi" id="Uydz3HwYnN" role="1TKVEl">
       <property role="IQ2nx" value="1054464846529291763" />
       <property role="TrG5h" value="password" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2lNm$6rarJa">
+    <property role="EcuMT" value="2698599839547636682" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.target" />
+    <property role="TrG5h" value="Group" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="2lNm$6rarJc" role="PzmwI">
+      <ref role="PrY4T" node="2lNm$6rarJb" resolve="Target" />
+    </node>
+    <node concept="1TJgyi" id="2lNm$6rarJw" role="1TKVEl">
+      <property role="IQ2nx" value="2698599839547636704" />
+      <property role="TrG5h" value="id" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2lNm$6rarJb">
+    <property role="EcuMT" value="2698599839547636683" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.target" />
+    <property role="TrG5h" value="Target" />
+  </node>
+  <node concept="1TIwiD" id="2lNm$6rarJW">
+    <property role="EcuMT" value="2698599839547636732" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.target" />
+    <property role="TrG5h" value="Person" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="2lNm$6rarJX" role="PzmwI">
+      <ref role="PrY4T" node="2lNm$6rarJb" resolve="Target" />
+    </node>
+    <node concept="1TJgyi" id="2lNm$6rarKo" role="1TKVEl">
+      <property role="IQ2nx" value="2698599839547636760" />
+      <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
