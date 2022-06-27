@@ -24,6 +24,10 @@
         </facet>
       </facets>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">5ddd061c-845c-495d-af68-c2b05abe89c2(com.geno1024.chatbot.runtime)</dependency>
+      </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -56,6 +60,9 @@
       <mapping-priorities />
     </generator>
   </generators>
+  <stubModelEntries>
+    <stubModelEntry path="C:/Users/Geno1024/MPSProjects/com.geno1024.chatbot/libs/mirai-core-all-2.11.1-all.jar" />
+  </stubModelEntries>
   <sourcePath />
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
