@@ -1,3 +1,36 @@
+# Grammar of Geno1024's Chatbot Language
+
+## What is it look like?
+```
+Chatbot <name>
+  Global Settings:
+    Cooldown Time: <time> 
+    Ban list: <user1>, <user2>
+  Login:
+    Login with <im>
+      <im>: <login>
+      Password: <password>
+  On Boot:
+    If boot then send to person <person id> <action name>
+    If boot then send to group <group id> <action name>
+  On Reply:
+    If message is exactly <keyword> then <action name>
+    If message contains <keyword> then <action name>
+    If message contains <keyword> and <keyword> then <action name>
+  On Schedule:
+    At <time> then <action name>
+  
+  Action Pool:
+    <action name> -> send text <text>
+    <action name> -> send text <text> then send text <text>
+    <action name> -> send text <text> then <action name>
+    <action name> -> send image <local dir>
+    <action name> -> send text <java program>
+    <action name> -> send image <java program that returns a local dir>
+    <action name> -> send text of calling program <program> <args...>
+    <action name> -> send image of calling program <program> <args...>
+```
+
 <!--
 # Grammar of Geno1024's Chatbot Language
 
