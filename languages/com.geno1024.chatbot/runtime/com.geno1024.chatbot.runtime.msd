@@ -4,7 +4,7 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="C:/Users/Geno1024/MPSProjects/com.geno1024.chatbot/libs/mirai-core-all-2.11.1-all.jar!/" type="java_classes">
+    <modelRoot contentPath="${module}/../../../libs/mirai-core-all-2.11.1-all.jar!/" type="java_classes">
       <sourceRoot location="." />
     </modelRoot>
   </models>
@@ -14,15 +14,13 @@
     </facet>
   </facets>
   <stubModelEntries>
-    <stubModelEntry path="C:/Users/Geno1024/MPSProjects/com.geno1024.chatbot/libs/mirai-core-all-2.11.1-all.jar" />
+    <stubModelEntry path="${module}/../../../libs/mirai-core-all-2.11.1-all.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">0e20c4de-a6b5-412e-a547-798620edae31(com.geno1024.chatbot.generator)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
-    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
     <language slang="l:4caf0310-491e-41f5-8a9b-2006b3a94898:jetbrains.mps.execution.util" version="0" />
     <language slang="l:6b3888c1-9802-44d8-8baf-f8e6c33ed689:jetbrains.mps.kotlin" version="1" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />

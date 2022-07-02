@@ -57,7 +57,6 @@
         <module reference="f7844d9f-cfc5-43db-9768-29fab1ddf4cc(com.geno1024.chatbot)" version="0" />
         <module reference="0e20c4de-a6b5-412e-a547-798620edae31(com.geno1024.chatbot.generator)" version="0" />
         <module reference="5ddd061c-845c-495d-af68-c2b05abe89c2(com.geno1024.chatbot.runtime)" version="0" />
-        <module reference="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" version="0" />
         <module reference="4caf0310-491e-41f5-8a9b-2006b3a94898(jetbrains.mps.execution.util)" version="0" />
         <module reference="b50d89c0-0fb9-4105-b652-222148c26a9b(jetbrains.mps.kotlin.stdlib)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
@@ -66,7 +65,7 @@
     </generator>
   </generators>
   <stubModelEntries>
-    <stubModelEntry path="C:/Users/Geno1024/MPSProjects/com.geno1024.chatbot/libs/mirai-core-all-2.11.1-all.jar" />
+    <stubModelEntry path="${module}/../../libs/mirai-core-all-2.11.1-all.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
