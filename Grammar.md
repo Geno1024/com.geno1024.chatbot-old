@@ -6,6 +6,7 @@ Chatbot <name>
   Global Settings:
     Cooldown Time: <time> 
     Ban list: <user1>, <user2>
+    
   Login:
     Login with <im>
       <im>: <login>
@@ -14,12 +15,19 @@ Chatbot <name>
     If boot then send to person <person id> <action name>
     If boot then send to group <group id> <action name>
   On Reply:
-    If message is exactly <keyword> then <action name>
-    If message contains <keyword> then <action name>
-    If message contains <keyword> and <keyword> then <action name>
+    Scope Group( <group id> ) {
+      If message is exactly <keyword> then <action name>
+      If message contains <keyword> then <action name>
+      If message contains <keyword> and <keyword> then <action name>
+    }
+    Scope Person( <group id> ) {
+      If message is exactly <keyword> then <action name>
+      If message contains <keyword> then <action name>
+      If message contains <keyword> and <keyword> then <action name>
+    }
   On Schedule:
     At <time> then <action name>
-  
+    Every <time> then <action name>
   Action Pool:
     <action name> -> send text <text>
     <action name> -> send text <text> then send text <text>

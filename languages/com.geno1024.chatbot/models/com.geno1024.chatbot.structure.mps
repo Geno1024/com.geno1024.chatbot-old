@@ -67,6 +67,12 @@
       <property role="20kJfa" value="login" />
       <ref role="20lvS9" node="6OTO369Q1KN" resolve="ILogin" />
     </node>
+    <node concept="1TJgyj" id="3Ll4TD6FMRE" role="1TKVEi">
+      <property role="IQ2ns" value="4347402568627858922" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="banList" />
+      <ref role="20lvS9" node="2AyxFARd2pS" resolve="Words" />
+    </node>
     <node concept="1TJgyj" id="2AyxFARbb6r" role="1TKVEi">
       <property role="IQ2ns" value="3000108433982402971" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -84,9 +90,16 @@
     <node concept="1TJgyj" id="2AyxFARcNjb" role="1TKVEi">
       <property role="IQ2ns" value="3000108433982829771" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="onReply" />
+      <property role="20kJfa" value="scopes" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2AyxFARcNi3" resolve="IOnReply" />
+      <ref role="20lvS9" node="3Ll4TD6GTUK" resolve="ReplyScope" />
+    </node>
+    <node concept="1TJgyj" id="3Ll4TD6LiYP" role="1TKVEi">
+      <property role="IQ2ns" value="4347402568629301173" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="onSchedule" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3Ll4TD6LiNh" resolve="IOnSchedule" />
     </node>
     <node concept="1TJgyj" id="2AyxFAR9Djt" role="1TKVEi">
       <property role="IQ2ns" value="3000108433982002397" />
@@ -94,6 +107,11 @@
       <property role="20kJfa" value="actionPool" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2AyxFAR9Dis" resolve="ActionChain" />
+    </node>
+    <node concept="1TJgyi" id="3Ll4TD6w838" role="1TKVEl">
+      <property role="IQ2nx" value="4347402568624799944" />
+      <property role="TrG5h" value="cooldown" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="PlHQZ" id="6OTO369Q1KN">
@@ -309,6 +327,117 @@
     </node>
     <node concept="PrWs8" id="3Ll4TD5uiov" role="PrDN$">
       <ref role="PrY4T" node="2AyxFAR9rEf" resolve="IAction" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Ll4TD6GTUK">
+    <property role="EcuMT" value="4347402568628149936" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.onreply.scope" />
+    <property role="TrG5h" value="ReplyScope" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="3Ll4TD6GTX7" role="1TKVEi">
+      <property role="IQ2ns" value="4347402568628150087" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="onReply" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2AyxFARcNi3" resolve="IOnReply" />
+    </node>
+    <node concept="1TJgyj" id="3Ll4TD6GU6J" role="1TKVEi">
+      <property role="IQ2ns" value="4347402568628150703" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="descriptor" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3Ll4TD6GU3c" resolve="ScopeDescriptor" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3Ll4TD6GU3c">
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.onreply.scope" />
+    <property role="EcuMT" value="4347402568628150395" />
+    <property role="TrG5h" value="ScopeDescriptor" />
+    <node concept="1TJgyi" id="3Ll4TD6Jc$t" role="1TKVEl">
+      <property role="IQ2nx" value="4347402568628750621" />
+      <property role="TrG5h" value="pattern" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Ll4TD6GU3Z">
+    <property role="EcuMT" value="4347402568628150527" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.onreply.scope" />
+    <property role="TrG5h" value="GroupScope" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3Ll4TD6GU5g" role="PzmwI">
+      <ref role="PrY4T" node="3Ll4TD6GU3c" resolve="ScopeDescriptor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Ll4TD6GU5s">
+    <property role="EcuMT" value="4347402568628150620" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.onreply.scope" />
+    <property role="TrG5h" value="FriendScope" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3Ll4TD6GU6p" role="PzmwI">
+      <ref role="PrY4T" node="3Ll4TD6GU3c" resolve="ScopeDescriptor" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3Ll4TD6LiNh">
+    <property role="TrG5h" value="IOnSchedule" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.onschedule" />
+    <property role="EcuMT" value="4347402568629300382" />
+  </node>
+  <node concept="1TIwiD" id="3Ll4TD6LiOh">
+    <property role="EcuMT" value="4347402568629300497" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.onschedule" />
+    <property role="TrG5h" value="AtTime" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3Ll4TD6LiOU" role="PzmwI">
+      <ref role="PrY4T" node="3Ll4TD6LiNh" resolve="IOnSchedule" />
+    </node>
+    <node concept="1TJgyj" id="3Ll4TD6LiQv" role="1TKVEi">
+      <property role="IQ2ns" value="4347402568629300639" />
+      <property role="20kJfa" value="action" />
+      <ref role="20lvS9" node="2AyxFAR9Dis" resolve="ActionChain" />
+    </node>
+    <node concept="1TJgyi" id="3Ll4TD6LiST" role="1TKVEl">
+      <property role="IQ2nx" value="4347402568629300793" />
+      <property role="TrG5h" value="hour" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3Ll4TD6LiTp" role="1TKVEl">
+      <property role="IQ2nx" value="4347402568629300825" />
+      <property role="TrG5h" value="minute" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3Ll4TD6LiTU" role="1TKVEl">
+      <property role="IQ2nx" value="4347402568629300858" />
+      <property role="TrG5h" value="second" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Ll4TD6NoSe">
+    <property role="EcuMT" value="4347402568629849614" />
+    <property role="3GE5qa" value="com.geno1024.chatbot.ds.onschedule" />
+    <property role="TrG5h" value="Period" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3Ll4TD6NoTl" role="PzmwI">
+      <ref role="PrY4T" node="3Ll4TD6LiNh" resolve="IOnSchedule" />
+    </node>
+    <node concept="1TJgyi" id="3Ll4TD6NoTx" role="1TKVEl">
+      <property role="IQ2nx" value="4347402568629849697" />
+      <property role="TrG5h" value="hour" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3Ll4TD6NoU1" role="1TKVEl">
+      <property role="IQ2nx" value="4347402568629849729" />
+      <property role="TrG5h" value="minute" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3Ll4TD6NoUy" role="1TKVEl">
+      <property role="IQ2nx" value="4347402568629849762" />
+      <property role="TrG5h" value="second" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="3Ll4TD6NoV4" role="1TKVEi">
+      <property role="IQ2ns" value="4347402568629849796" />
+      <property role="20kJfa" value="action" />
+      <ref role="20lvS9" node="2AyxFAR9Dis" resolve="ActionChain" />
     </node>
   </node>
 </model>
